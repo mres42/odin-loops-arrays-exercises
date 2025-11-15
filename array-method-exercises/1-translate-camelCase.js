@@ -16,15 +16,8 @@ function camelize(string) {
 console.log(camelize("abc-def-ghi"));
 
 /**
- * Recommended solution
+ * Notes:
+ * Recommended solution shows the use of map()
+ * my solution is old fashioned using basic loops
+ * using map() would be cleaner and more functional
  */
-// function camelize(str) {
-//   return str
-//     .split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
-//     .map(
-//       // capitalizes first letters of all array items except the first one
-//       // converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
-//       (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-//     )
-//     .join(''); // joins ['my', 'Long', 'Word'] into 'myLongWord'
-// }
